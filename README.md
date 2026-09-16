@@ -10,8 +10,7 @@
 
 <img src="https://komarev.com/ghpvc/?username=Amithkrishna29z&label=Profile+Views&color=F75C7E&style=for-the-badge" alt="views"/>
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FAmithkrishna29z&query=%24.public_repos&label=Public%20Repos&color=8A2BE2&style=for-the-badge&logo=github&logoColor=white" alt="repos"/>
-<img src="https://img.shields.io/github/followers/Amithkrishna29z?label=Followers&style=for-the-badge&color=22D3EE&labelColor=1a1b27&logo=github&logoColor=white" alt="followers"/>
-<img src="https://img.shields.io/badge/Since-2022-FBBF24?style=for-the-badge&labelColor=1a1b27" alt="since"/>
+<img src="https://img.shields.io/badge/Languages-12-FBBF24?style=for-the-badge&labelColor=1a1b27&logo=polywork&logoColor=white" alt="languages"/>
 
 </div>
 
