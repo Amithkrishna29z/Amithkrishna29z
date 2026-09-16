@@ -16,7 +16,7 @@
 
 <img width="100%" src="https://raw.githubusercontent.com/Amithkrishna29z/Amithkrishna29z/main/assets/terminal.svg" alt="Animated terminal running whoami, git log and a build"/>
 
-<sub>Not a GIF, not a third-party service — a <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/terminal.svg">hand-written SVG</a> with 13 animation tracks on a 14.5-second loop.</sub>
+<sub>Not a GIF, not a third-party service — a <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/terminal.svg">hand-written SVG</a> with 18 animation tracks on a 14.5-second loop.</sub>
 
 <br><br>
 
@@ -984,7 +984,7 @@ flowchart LR
     C2(["cron · 03:17 UTC daily"]) --> PY[".github/scripts/daily.py"]
     PY -->|commits to itself| RM
     OB --> RM[README.md]
-    SVG["assets/terminal.svg<br/>hand-written, 13 tracks"] --> RM
+    SVG["assets/terminal.svg<br/>hand-written, 18 tracks"] --> RM
     API["GitHub API<br/>shields.io / streak / trophies"] -->|on every page load| RM
     RM --> YOU([what you are reading])
 
@@ -1001,7 +1001,7 @@ flowchart LR
 | :--- | :--- | :--- |
 | 🐍 Contribution snake | A scheduled Action renders my contribution grid into two themed SVGs and force-pushes them to an orphan `output` branch. The README never changes; the image behind it does. | [`snake.yml`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/snake.yml) |
 | 🎲 Daily block | A cron job runs a 60-line Python script that rewrites the text between two HTML comment markers and commits the result. The README modifies itself, on a schedule, in place. | [`daily.py`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/scripts/daily.py) |
-| 💻 Animated terminal | No library, no GIF, no third-party render service. A generated SVG with 13 SMIL `<animate>` tracks driving `clipPath` widths, so the text appears one character at a time on a 14.5-second loop. Roughly 10 KB, and it degrades to a static terminal if animation is blocked. | [`terminal.svg`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/terminal.svg) · [generator](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/gen_terminal.py) |
+| 💻 Animated terminal | No library, no GIF, no third-party render service. A generated SVG with 18 SMIL `<animate>` tracks — 8 animating `clipPath` widths so text appears one character at a time, 4 moving the cursor along with it, 6 handling blink and reveal — on a 14.5-second loop. Roughly 10 KB, and it degrades to a static terminal if animation is blocked. | [`terminal.svg`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/terminal.svg) · [generator](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/gen_terminal.py) |
 | 📊 Language table | Computed once from the GitHub API, then hand-corrected — because the raw numbers say I am a 62% C developer and that is a vendored SQLite amalgamation, not me. | the table above |
 
 <details>

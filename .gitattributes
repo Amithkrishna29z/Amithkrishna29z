@@ -1,0 +1,4 @@
+# Scripts here run on ubuntu-latest in Actions - CRLF breaks the bash run: blocks.
+* text=auto eol=lf
+*.png binary
+*.gif binary
