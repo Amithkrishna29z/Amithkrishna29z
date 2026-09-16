@@ -916,7 +916,7 @@ The loop that matters is `Silence -> Hypothesis`. A log line that does not appea
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=Amithkrishna29z&theme=radical&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7" alt="trophies"/>
+<img width="100%" src="https://raw.githubusercontent.com/Amithkrishna29z/Amithkrishna29z/main/assets/achievements.svg" alt="Repositories 99, commits 736, languages 12, active this year 76, pull requests 63, years on GitHub 4.1"/>
 
 <br>
 
@@ -1000,6 +1000,7 @@ flowchart LR
 | 🐍 Contribution snake | A scheduled Action renders my contribution grid into two themed SVGs and force-pushes them to an orphan `output` branch. The README never changes; the image behind it does. | [`snake.yml`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/snake.yml) |
 | 🎲 Daily block | A cron job runs a 60-line Python script that rewrites the text between two HTML comment markers and commits the result. The README modifies itself, on a schedule, in place. | [`daily.py`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/scripts/daily.py) |
 | 💻 Animated terminal | No library, no GIF, no third-party render service. A generated SVG with 18 SMIL `<animate>` tracks — 8 animating `clipPath` widths so text appears one character at a time, 4 moving the cursor along with it, 6 handling blink and reveal — on a 14.5-second loop. Roughly 10 KB, and it degrades to a static terminal if animation is blocked. | [`terminal.svg`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/terminal.svg) · [generator](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/gen_terminal.py) |
+| 🏅 Achievement cards | Six numbers pulled straight from the GitHub API and drawn into an SVG in this repo. These used to come from a trophy service, which one day started answering `HTTP 402 DEPLOYMENT_DISABLED` and turned into a broken image on my own profile — exactly the failure described below. Now the worst case is stale numbers, not a broken image. | [`achievements.svg`](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/achievements.svg) · [generator](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/gen_stats.py) |
 | 📊 Language table | Computed once from the GitHub API, then hand-corrected — because the raw numbers say I am a 62% C developer and that is a vendored SQLite amalgamation, not me. | the table above |
 
 <details>
@@ -1009,7 +1010,7 @@ flowchart LR
 
 Two reasons, one principled and one petty.
 
-**The principled one:** every third-party badge on this page is a dependency on somebody else's uptime. When `some-cool-svg.vercel.app` gets rate-limited or quietly shuts down, the profile it renders on turns into a row of broken-image icons and the owner is usually the last to find out. The terminal is a file in this repository. It renders as long as GitHub does.
+**The principled one:** every third-party badge on this page is a dependency on somebody else's uptime. When `some-cool-svg.vercel.app` gets rate-limited or quietly shuts down, the profile it renders on turns into a row of broken-image icons and the owner is usually the last to find out. I did not have to wait long to be proved right: the trophy row above was a `.vercel.app` service until it started returning `HTTP 402 DEPLOYMENT_DISABLED`, and I found out because someone told me the image was broken. It is now generated from the GitHub API and committed to this repo. The terminal is a file in this repository. It renders as long as GitHub does.
 
 **The petty one:** getting a character-by-character reveal out of declarative SVG is a genuinely fun constraint. There is no JavaScript in a GitHub-rendered image, so the typing has to be a `clipPath` rectangle whose `width` is animated through discrete per-character values on a single looping timeline, with a cursor rectangle whose `x` is animated through the same value list so it rides along with the text. The keyframe arithmetic is annoying enough that I generated it with [a script](https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/gen_terminal.py) rather than trusting myself with it.
 
