@@ -16,8 +16,6 @@
 
 <img width="100%" src="https://raw.githubusercontent.com/Amithkrishna29z/Amithkrishna29z/main/assets/terminal.svg" alt="Animated terminal running whoami, git log and a build"/>
 
-<sub>Not a GIF, not a third-party service — a <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/assets/terminal.svg">hand-written SVG</a> with 18 animation tracks on a 14.5-second loop.</sub>
-
 <br><br>
 
 **👇 Click anything below to expand it.** There are four bug-hunting puzzles, a 2 AM incident you have to survive, and at least one easter egg. This README is meant to be played with, not scrolled past.
