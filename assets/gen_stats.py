@@ -8,6 +8,7 @@ worst failure mode is now stale numbers rather than a broken image.
 Cards are chosen from a candidate list at render time: anything that errors or
 comes back zero is skipped, and the first six survivors are drawn. Stdlib only.
 """
+import collections
 import datetime
 import json
 import os
@@ -30,8 +31,8 @@ ICONS = {
     "repo":   "M3 2.5h13a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 0-1.5-1.5H3z M3 2.5v18",
     "commit": "M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M12 2.5v6 M12 15.5v6",
     "code":   "M8.5 6.5L3 12l5.5 5.5 M15.5 6.5L21 12l-5.5 5.5",
+    "stack":  "M12 2.5 2.5 7.5 12 12.5 21.5 7.5z M2.5 12 12 17l9.5-5 M2.5 16.5 12 21.5l9.5-5",
     "pulse":  "M2.5 12h4l2.5-7 4 14 2.5-7h6",
-    "pr":     "M6 7.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z M6 21.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z M6 7.5v9 M18 21.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z M18 16.5V9a3 3 0 0 0-3-3h-4",
     "clock":  "M12 21.5a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19z M12 6.5V12l3.5 2.5",
     "star":   "M12 2.5l2.9 5.9 6.6.9-4.8 4.6 1.2 6.5-5.9-3.1-5.9 3.1 1.2-6.5L2.5 9.3l6.6-.9z",
     "users":  "M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M2.5 20a6.5 6.5 0 0 1 13 0 M16.5 5.2a3.5 3.5 0 0 1 0 6.6 M18 14.2a6.5 6.5 0 0 1 3.5 5.8",
@@ -47,16 +48,29 @@ def get(path):
     if token:
         req.add_header("Authorization", "Bearer " + token)
     with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)
+        body = r.read()
+        return json.loads(body) if body else []
 
 
-def search_count(query):
-    """Search API needs a token. Returns None rather than failing the render."""
-    try:
-        return get("/search/%s&per_page=1" % query)["total_count"]
-    except Exception as e:
-        print("  ! skipped %s (%s)" % (query, e))
-        return None
+def commit_count(repos):
+    """Sum this user's commits across their own repos.
+
+    Deliberately NOT the Search API: /search/commits returns a different total
+    depending on the token doing the asking (736 with a personal token, 394 with
+    the Actions GITHUB_TOKEN), which would make the number flip-flop daily.
+    /repos/.../contributors is scope-independent, so the figure is reproducible.
+    """
+    total, skipped = 0, 0
+    for r in repos:
+        try:
+            for c in get("/repos/%s/contributors?per_page=100&anon=0" % r["full_name"]) or []:
+                if c.get("login") == USER:
+                    total += c.get("contributions", 0)
+        except Exception:
+            skipped += 1
+    if skipped:
+        print("  ! %d repo(s) failed; the total is an undercount this run" % skipped)
+    return total
 
 
 def collect():
@@ -79,16 +93,19 @@ def collect():
     active = sum(1 for r in owned if age_days(r["pushed_at"]) <= 365)
     years = age_days(user["created_at"]) / 365.25
 
+    langs = collections.Counter(r["language"] for r in owned if r["language"])
+    top = langs.most_common(1)[0][0] if langs else None
+
     # ordered by preference; zeros and failures drop out
     candidates = [
-        ("repo",   user["public_repos"],                                  "Repositories",    PINK),
-        ("commit", search_count("commits?q=author:%s" % USER),            "Commits",         YELLOW),
-        ("code",   len({r["language"] for r in owned if r["language"]}),  "Languages",       CYAN),
-        ("pulse",  active,                                                "Active this year", PURPLE),
-        ("pr",     search_count("issues?q=author:%s+type:pr" % USER),     "Pull requests",   GREEN),
-        ("clock",  round(years, 1),                                       "Years on GitHub", ORANGE),
-        ("star",   sum(r["stargazers_count"] for r in owned),             "Stars earned",    YELLOW),
-        ("users",  user["followers"],                                     "Followers",       PURPLE),
+        ("repo",   user["public_repos"],        "Repositories",     PINK),
+        ("commit", commit_count(owned),         "Commits",          YELLOW),
+        ("stack",  len(langs),                  "Languages",        CYAN),
+        ("pulse",  active,                      "Active this year", PURPLE),
+        ("code",   top,                         "Top language",     GREEN),
+        ("clock",  round(years, 1),             "Years on GitHub",  ORANGE),
+        ("star",   sum(r["stargazers_count"] for r in owned), "Stars earned", YELLOW),
+        ("users",  user["followers"],           "Followers",        PURPLE),
     ]
     return [c for c in candidates if c[1]][:MAX_CARDS]
 
@@ -113,8 +130,8 @@ def render(stats):
                  % (cw / 2 - 10.8, colour))
         o.append('<path d="%s"/>' % ICONS[icon])
         o.append('</g>')
-        o.append('<text x="%.2f" y="79" text-anchor="middle" font-size="27" font-weight="700" fill="%s">%s</text>'
-                 % (cw / 2, VALUE, value))
+        o.append('<text x="%.2f" y="79" text-anchor="middle" font-size="%d" font-weight="700" fill="%s">%s</text>'
+                 % (cw / 2, 27 if str(value).replace('.', '').isdigit() else 21, VALUE, value))
         o.append('<text x="%.2f" y="100" text-anchor="middle" font-size="10" letter-spacing="0.6" fill="%s">%s</text>'
                  % (cw / 2, LABEL, label.upper()))
         o.append('</g>')
