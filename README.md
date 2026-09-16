@@ -103,19 +103,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-10**
+**🎲 Repo roulette — 2026-09-16**
 
-### [rust-todo-api](https://github.com/Amithkrishna29z/rust-todo-api)
+### [SLangJava](https://github.com/Amithkrishna29z/SLangJava)
 
-The smallest possible excuse to fight the borrow checker.
+A compiler, ported. 174 tests say it agrees with the original everywhere.
 
-`Rust · Axum`
+`Java · ANTLR`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> The hardest part of porting a compiler is discovering which parts of the spec were never really decided.
+> A test that has never failed has never told you anything.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
