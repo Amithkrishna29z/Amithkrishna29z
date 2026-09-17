@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-16**
+**🎲 Repo roulette — 2026-09-17**
 
-### [SLangJava](https://github.com/Amithkrishna29z/SLangJava)
+### [mini-rate-limiter](https://github.com/Amithkrishna29z/mini-rate-limiter)
 
-A compiler, ported. 174 tests say it agrees with the original everywhere.
+Token bucket, thread-safe, small enough to read in one sitting.
 
-`Java · ANTLR`
+`Java · JUnit 5`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> A test that has never failed has never told you anything.
+> If the retry has no jitter, you did not build a retry — you built a thundering herd.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
