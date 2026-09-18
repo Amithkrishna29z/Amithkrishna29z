@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-17**
+**🎲 Repo roulette — 2026-09-18**
 
-### [mini-rate-limiter](https://github.com/Amithkrishna29z/mini-rate-limiter)
+### [jython-plugin-engine](https://github.com/Amithkrishna29z/jython-plugin-engine)
 
-Token bucket, thread-safe, small enough to read in one sitting.
+A Python runtime living inside a JVM app, hot-loading plugins.
 
-`Java · JUnit 5`
+`Java · Jython`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> If the retry has no jitter, you did not build a retry — you built a thundering herd.
+> If it needs a comment explaining *what*, rename it. If it needs one explaining *why*, keep it forever.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
