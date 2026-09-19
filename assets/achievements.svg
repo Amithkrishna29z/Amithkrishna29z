@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 124" width="900" height="124" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace" role="img" aria-label="100 repositories, 336 commits, 12 languages, 77 active this year, Java top language, 4.1 years on github">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 124" width="900" height="124" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace" role="img" aria-label="100 repositories, 338 commits, 12 languages, 77 active this year, Java top language, 4.1 years on github">
 <g transform="translate(0.00,0)">
 <rect x="0.75" y="0.75" width="138.50" height="122.50" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
 <path d="M11 1.5h118.00" stroke="#f75c7e" stroke-width="3" stroke-linecap="round"/>
@@ -15,7 +15,7 @@
 <g transform="translate(59.20,24) scale(0.9)" fill="none" stroke="#fbbf24" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
 <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M12 2.5v6 M12 15.5v6"/>
 </g>
-<text x="70.00" y="79" text-anchor="middle" font-size="27" font-weight="700" fill="#e6edf3">336</text>
+<text x="70.00" y="79" text-anchor="middle" font-size="27" font-weight="700" fill="#e6edf3">338</text>
 <text x="70.00" y="100" text-anchor="middle" font-size="10" letter-spacing="0.6" fill="#8b949e">COMMITS</text>
 </g>
 <g transform="translate(304.00,0)">
