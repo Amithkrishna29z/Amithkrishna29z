@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-19**
+**🎲 Repo roulette — 2026-09-20**
 
-### [java-byteCode-engineering](https://github.com/Amithkrishna29z/java-byteCode-engineering)
+### [java-jni](https://github.com/Amithkrishna29z/java-jni)
 
-Rewriting classes after javac has already had its say.
+Crossing the JVM/native boundary, on purpose.
 
-`Java · ASM`
+`Java · C`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> An abstraction with exactly one implementation is a rename with extra steps.
+> A build that only works on your machine is a personality trait, not a deliverable.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
