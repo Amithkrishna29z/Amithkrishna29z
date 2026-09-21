@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-20**
+**🎲 Repo roulette — 2026-09-21**
 
-### [java-jni](https://github.com/Amithkrishna29z/java-jni)
+### [dotnet-seat-wave](https://github.com/Amithkrishna29z/dotnet-seat-wave)
 
-Crossing the JVM/native boundary, on purpose.
+A seat engine that refuses to double-book under load.
 
-`Java · C`
+`.NET 8 · SignalR`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> A build that only works on your machine is a personality trait, not a deliverable.
+> Logs you only read during an incident are logs you designed during an incident.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
