@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-21**
+**🎲 Repo roulette — 2026-09-22**
 
-### [dotnet-seat-wave](https://github.com/Amithkrishna29z/dotnet-seat-wave)
+### [documind](https://github.com/Amithkrishna29z/documind-multi-agent-document-intelligence)
 
-A seat engine that refuses to double-book under load.
+RAG that grades its own retrieval and backs out when context is weak.
 
-`.NET 8 · SignalR`
+`LangGraph · FastAPI`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> Logs you only read during an incident are logs you designed during an incident.
+> The bug is in the code you didn't think was involved. It is always in that code.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
