@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-22**
+**🎲 Repo roulette — 2026-09-23**
 
-### [documind](https://github.com/Amithkrishna29z/documind-multi-agent-document-intelligence)
+### [springcli](https://github.com/Amithkrishna29z/springcli)
 
-RAG that grades its own retrieval and backs out when context is weak.
+Scaffolds Spring Boot projects without opening a browser.
 
-`LangGraph · FastAPI`
+`Java 21 · Picocli`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> The bug is in the code you didn't think was involved. It is always in that code.
+> Every cache is a correctness bug waiting for enough traffic.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
