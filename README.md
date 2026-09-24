@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-23**
+**🎲 Repo roulette — 2026-09-24**
 
-### [springcli](https://github.com/Amithkrishna29z/springcli)
+### [linux-internals](https://github.com/Amithkrishna29z/linux-internals)
 
-Scaffolds Spring Boot projects without opening a browser.
+Notes from reading the parts of the OS you normally just trust.
 
-`Java 21 · Picocli`
+`C · Linux`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> Every cache is a correctness bug waiting for enough traffic.
+> `git bisect` has found more of my bugs than my intuition has.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
