@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-24**
+**🎲 Repo roulette — 2026-09-25**
 
-### [linux-internals](https://github.com/Amithkrishna29z/linux-internals)
+### [rust-todo-api](https://github.com/Amithkrishna29z/rust-todo-api)
 
-Notes from reading the parts of the OS you normally just trust.
+The smallest possible excuse to fight the borrow checker.
 
-`C · Linux`
+`Rust · Axum`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> `git bisect` has found more of my bugs than my intuition has.
+> The hardest part of porting a compiler is discovering which parts of the spec were never really decided.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
