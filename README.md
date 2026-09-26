@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-25**
+**🎲 Repo roulette — 2026-09-26**
 
-### [rust-todo-api](https://github.com/Amithkrishna29z/rust-todo-api)
+### [google-search-mcp](https://github.com/Amithkrishna29z/python-google-search-mcp-server)
 
-The smallest possible excuse to fight the borrow checker.
+An MCP server, so a model can go look things up itself.
 
-`Rust · Axum`
+`Python · MCP`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> The hardest part of porting a compiler is discovering which parts of the spec were never really decided.
+> Concurrency bugs are just race conditions you were lucky about in testing.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
