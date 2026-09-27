@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-26**
+**🎲 Repo roulette — 2026-09-27**
 
-### [google-search-mcp](https://github.com/Amithkrishna29z/python-google-search-mcp-server)
+### [java-CompletableFuture](https://github.com/Amithkrishna29z/java-CompletableFuture)
 
-An MCP server, so a model can go look things up itself.
+Async composition in Java, without the callback pyramid.
 
-`Python · MCP`
+`Java · Concurrency`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> Concurrency bugs are just race conditions you were lucky about in testing.
+> `SERIALIZABLE` is not slow. Retrying a doomed transaction forty times is slow.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
