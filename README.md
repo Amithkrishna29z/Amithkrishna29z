@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-27**
+**🎲 Repo roulette — 2026-09-28**
 
-### [java-CompletableFuture](https://github.com/Amithkrishna29z/java-CompletableFuture)
+### [connect-c-to-sqlite](https://github.com/Amithkrishna29z/connect-c-to-sqlite)
 
-Async composition in Java, without the callback pyramid.
+Talking to SQLite from C — and the repo that ruins my language stats.
 
-`Java · Concurrency`
+`C · SQLite`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> `SERIALIZABLE` is not slow. Retrying a doomed transaction forty times is slow.
+> A RAG system that can't say "I don't know" is a confident liar with citations.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
