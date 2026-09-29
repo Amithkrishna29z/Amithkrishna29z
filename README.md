@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-09-28**
+**🎲 Repo roulette — 2026-09-29**
 
-### [connect-c-to-sqlite](https://github.com/Amithkrishna29z/connect-c-to-sqlite)
+### [tiny-c-plus-plus](https://github.com/Amithkrishna29z/tiny-c-plus-plus)
 
-Talking to SQLite from C — and the repo that ruins my language stats.
+C++ kept deliberately small.
 
-`C · SQLite`
+`C++`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> A RAG system that can't say "I don't know" is a confident liar with citations.
+> If two components disagree about who owns a piece of state, you have a bug — you just haven't reproduced it yet.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
