@@ -101,19 +101,19 @@ Somewhere in these 98 repos is a `volkswagen` repo. I'm not explaining it.
 
 <table><tr><td width="55%" valign="top">
 
-**🎲 Repo roulette — 2026-11-03**
+**🎲 Repo roulette — 2026-11-05**
 
-### [java-byteCode-engineering](https://github.com/Amithkrishna29z/java-byteCode-engineering)
+### [dotnet-seat-wave](https://github.com/Amithkrishna29z/dotnet-seat-wave)
 
-Rewriting classes after javac has already had its say.
+A seat engine that refuses to double-book under load.
 
-`Java · ASM`
+`.NET 8 · SignalR`
 
 </td><td width="45%" valign="top">
 
 **💡 Something I believe today**
 
-> An abstraction with exactly one implementation is a rename with extra steps.
+> Logs you only read during an incident are logs you designed during an incident.
 
 <sub>Rotated by <a href="https://github.com/Amithkrishna29z/Amithkrishna29z/blob/main/.github/workflows/daily.yml">a cron job</a>, not by hand. Come back tomorrow.</sub>
 
